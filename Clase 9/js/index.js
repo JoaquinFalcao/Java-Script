@@ -78,3 +78,95 @@ console.log(siguienteDelDoble(6));
 console.log(anterior(2));
 console.log(triple(4));
 console.log(anteriorDelTriple(6));
+
+
+
+
+let misDatos = {
+    nombre: "Joaquin",
+    apellido: "Falcao",
+    dni: 47895969,
+    edad: 18,
+    comidasFavoritas: ["Fideos", "Hamburguesa", "Milianesa"],
+    saludar: function (){
+        return "Hola me llamo " + this.nombre + " " + this.apellido + " y tengo " + this.edad + " años. Mi primer comida favorita es " + this.comidasFavoritas[0] + ".";
+    }
+};
+console.log(misDatos)
+console.log(misDatos.saludar())
+
+
+let auto = {
+    marca: "Ram",
+    modelo: "Rampage",
+    anio: 2025,
+    color: "negro",
+    posicion: 0,
+    avanzar: function (n){
+        return this.posicion = this.posicion + n
+    },
+    retroceder: function(n){
+        return this.posicion = this.posicion - n
+    }
+};
+console.log(auto)
+auto.avanzar(10)
+auto.retroceder(5)
+console.log(auto.posicion)
+
+
+let nuevoAuto = {
+    marca: "Ram",
+    modelo: "Rampage",
+    anio: 2025,
+    color: "negro",
+    posicion: 0,
+    moverse: function (n){
+        return this.posicion = this.posicion + n
+    }
+};
+console.log(nuevoAuto)
+nuevoAuto.moverse(10)
+console.log(nuevoAuto.posicion)
+
+
+let ironMan = {
+    nobre: "IronMan",
+    equipo: "Avengers",
+    poderes: ["Volar", "Lanzar misiles", "Disparar láser"],
+    energia: 100,
+    getPoder: function(n){
+        this.energia = this.energia - 10
+        return "Poder Elegido de" + this.nombre + ": " + this.poderes[n] + ". Energía restante: " + this.energia + ".";
+    }
+};
+let hulk = {
+    nobre: "Hulk",
+    equipo: "Avengers",
+    poderes: ["Aplastar", "Gritar", "Golpear"],
+    energia: 100,
+    getPoder: function(n){
+        this.energia = this.energia - 10
+        return "Poder Elegido de" + this.nombre + ": " + this.poderes[n] + ". Energía restante: " + this.energia + ".";
+    }
+};
+console.log(ironMan.getPoder(0))
+console.log(hulk.getPoder(1))
+console.log(ironMan.getPoder(2))
+console.log(hulk.getPoder(0))
+console.log(ironMan.getPoder(1))
+console.log(hulk.getPoder(2))
+console.log(ironMan.getPoder(0))
+console.log(hulk.getPoder(1))
+console.log(ironMan.getPoder(2))
+console.log(hulk.getPoder(0))
+console.log(ironMan.getPoder(1))
+console.log(hulk.getPoder(2))
+console.log(ironMan.getPoder(0))
+console.log(hulk.getPoder(1))
+console.log(ironMan.getPoder(2))
+console.log(hulk.getPoder(0))
+console.log(ironMan.getPoder(1))
+console.log(hulk.getPoder(2))
+console.log(ironMan.getPoder(0))
+console.log(hulk.getPoder(1))
